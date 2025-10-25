@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const ContactMe = () => {
     const data = useStaticQuery(graphql`
-        query ProfileMetaQuery {
+        query ContactInfoQuery {
             site {
                 siteMetadata {
                     email
