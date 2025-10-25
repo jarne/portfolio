@@ -1,6 +1,7 @@
 {
     "name": "Colly",
-    "description": "Open Source Web-based Website URL Collection app",
+    "slogan": "Open Source Web-based Website URL Collection app",
+    "description": "Colly is a web-based application designed for effortlessly collecting and organizing your favorite URL's and websites. With Colly, users can create a personalized library of web pages.",
     "license": "MIT",
     "screenshot": "colly-screenshot",
     "languages": ["JavaScript"],
@@ -8,5 +9,23 @@
     "tools": ["MongoDB", "MinIO", "Docker", "CircleCI"],
     "urls": {
         "source": "https://github.com/jarne/colly"
-    }
+    },
+    "features": [
+        {
+            "title": "URL Organization with Tagging",
+            "description": "Users can categorize collected URLs using customizable tags in workspaces with configurable permissions, with the relationships stored in the MongoDB database and managed by the Node.js/Express backend."
+        },
+        {
+            "title": "Metadata Fetching",
+            "description": "Saved website are automatically craweled using a library to fetch important information, such as its title and meta description. Site icons and preview banners are stored using an external S3-compatible object storage (like MinIO or Amazon S3)."
+        },
+        {
+            "title": "Easy-to-use interface",
+            "description": "Collected URLs are managed using a responsive React frontend, providing an intuitive user experience for managing, sorting and filtering links and tags."
+        },
+        {
+            "title": "Deployment & CI/CD",
+            "description": "The application is orchestrated using Docker Compose as a multi-container environment. All back-end services are unit tested and linted using a CI workflow, and an automated CD pipeline builds a Docker image once a new version is published."
+        }
+    ]
 }

@@ -10,6 +10,7 @@ import { projectTitle } from "./projectShowcase.module.css"
 
 type Project = {
     name: string
+    slogan: string
     description: string
     license: string
     screenshot: string
@@ -19,6 +20,10 @@ type Project = {
     urls: {
         source: string
     }
+    features: {
+        title: string
+        description: string
+    }[]
 }
 type ProjectsEdge = {
     node: Project
@@ -46,6 +51,7 @@ const ProjectShowcase = () => {
                 edges {
                     node {
                         name
+                        slogan
                         description
                         license
                         screenshot
@@ -54,6 +60,10 @@ const ProjectShowcase = () => {
                         tools
                         urls {
                             source
+                        }
+                        features {
+                            title
+                            description
                         }
                     }
                 }
@@ -95,8 +105,16 @@ const ProjectShowcase = () => {
     return data.allProjectsJson.edges.map(
         ({ node }: ProjectsEdge, index: number) => (
             <section key={index} className="mb-4">
-                {renderProjectScreenshot(node.screenshot)}
-                <h2 className={`${projectTitle} mt-2 mb-2`}>{node.name}</h2>
+                <a
+                    href={node.urls.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {renderProjectScreenshot(node.screenshot)}
+                    <h2 className={`${projectTitle} mt-2 mb-2`}>
+                        {node.slogan}
+                    </h2>
+                </a>
                 <p>
                     {node.languages.map(language => (
                         <span
@@ -121,6 +139,14 @@ const ProjectShowcase = () => {
                     ))}
                 </p>
                 <p>{node.description}</p>
+                <div className="row">
+                    {node.features.map((feature, featIndex) => (
+                        <div key={featIndex} className="col-6 col-md-3">
+                            <h5>{feature.title}</h5>
+                            <p>{feature.description}</p>
+                        </div>
+                    ))}
+                </div>
             </section>
         ),
     )

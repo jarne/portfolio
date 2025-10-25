@@ -1,6 +1,7 @@
 {
     "name": "PassPanda",
-    "description": "Instantly create robust passwords and passphrases on the web",
+    "slogan": "Instantly create robust passwords and passphrases on the web",
+    "description": "PassPanda is a user-friendly static web application designed to facilitate the generation of secure passwords and Diceware passphrases.",
     "license": "MIT",
     "screenshot": "passpanda-screenshot",
     "languages": ["JavaScript"],
@@ -8,5 +9,11 @@
     "tools": ["Vite", "GitHub Actions", "AWS S3", "AWS CloudFront"],
     "urls": {
         "source": "https://github.com/jarne/passpanda"
-    }
+    },
+    "features": [
+        {
+            "title": "abc",
+            "description": "Servus"
+        }
+    ]
 }
