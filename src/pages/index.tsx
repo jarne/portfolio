@@ -10,12 +10,13 @@ import ProjectShowcase from "../components/showcase/projectShowcase"
 import { showcaseContainer } from "./index.module.css"
 
 import "../utils/bootstrapImport.scss"
+import "@fontsource/titan-one"
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <main className="container">
             <ProfileHeader />
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mt-3">
                 <div className={showcaseContainer}>
                     <ProjectShowcase />
                 </div>

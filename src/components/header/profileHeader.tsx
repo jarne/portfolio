@@ -6,7 +6,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import ProfilePicture from "./profilePicture"
-import { githubLogo } from "./profileHeader.module.css"
+import { nameHeading, githubLogo } from "./profileHeader.module.css"
 
 import githubSvg from "../../images/logos/github.svg"
 
@@ -32,7 +32,9 @@ const ProfileHeader = () => {
             </div>
             <div className="col-12 col-md-8 d-flex align-items-center">
                 <div>
-                    <h1>{data.site.siteMetadata.name}</h1>
+                    <h1 className={nameHeading}>
+                        {data.site.siteMetadata.name}
+                    </h1>
                     <p className="mb-2">{data.site.siteMetadata.bio}</p>
                     <p className="mb-2">
                         <span role="img" aria-label="">

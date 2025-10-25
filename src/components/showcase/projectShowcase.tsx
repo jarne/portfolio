@@ -6,6 +6,8 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, type IGatsbyImageData } from "gatsby-plugin-image"
 
+import { projectTitle } from "./projectShowcase.module.css"
+
 type Project = {
     name: string
     description: string
@@ -92,9 +94,9 @@ const ProjectShowcase = () => {
 
     return data.allProjectsJson.edges.map(
         ({ node }: ProjectsEdge, index: number) => (
-            <section key={index}>
+            <section key={index} className="mb-4">
                 {renderProjectScreenshot(node.screenshot)}
-                <h2>{node.name}</h2>
+                <h2 className={`${projectTitle} mt-2 mb-2`}>{node.name}</h2>
                 <p>
                     {node.languages.map(language => (
                         <span
