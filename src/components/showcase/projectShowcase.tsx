@@ -137,7 +137,10 @@ const ProjectShowcase = () => {
                         </span>
                     ))}
                     {node.tools.map(tool => (
-                        <span key={tool} className="badge text-bg-tool me-1 mb-1">
+                        <span
+                            key={tool}
+                            className="badge text-bg-tool me-1 mb-1"
+                        >
                             {tool}
                         </span>
                     ))}

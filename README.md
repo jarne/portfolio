@@ -2,6 +2,8 @@
 
 Portfolio website showing current development side projects
 
+[![Build and deploy the website](https://github.com/jarne/portfolio/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/jarne/portfolio/actions/workflows/build-deploy.yml)
+
 ## 📙 Description
 
 This is a portfolio website showcasing current development side projects, both open source and
