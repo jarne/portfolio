@@ -22,12 +22,11 @@ const ProfilePicture = () => {
     `)
 
     return (
-        <div>
-            <GatsbyImage
-                image={data.file.childImageSharp.gatsbyImageData}
-                alt="Profile picture"
-            />
-        </div>
+        <GatsbyImage
+            image={data.file.childImageSharp.gatsbyImageData}
+            className="border border-2 rounded-circle"
+            alt="Profile picture"
+        />
     )
 }
 
