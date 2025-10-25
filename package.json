@@ -1,0 +1,47 @@
+{
+    "name": "portfolio",
+    "version": "0.0.1",
+    "description": "Portfolio website showing current development side projects",
+    "keywords": [
+        "portfolio",
+        "dev",
+        "gatsbyjs",
+        "typescript"
+    ],
+    "homepage": "https://github.com/jarne/portfolio",
+    "bugs": {
+        "url": "https://github.com/jarne/portfolio/issues"
+    },
+    "license": "UNLICENSED",
+    "author": {
+        "name": "Jarne",
+        "url": "https://github.com/jarne"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jarne/portfolio.git"
+    },
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "typecheck": "tsc --noEmit",
+        "format": "prettier --write \"**/*.{ts,tsx,css,json,yml,md}\""
+    },
+    "dependencies": {
+        "gatsby": "^5.14.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "prettier": "^3.6.2",
+        "typescript": "^5.3.3"
+    },
+    "private": true,
+    "packageManager": "yarn@4.10.3"
+}

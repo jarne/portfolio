@@ -1,0 +1,12 @@
+node_modules/
+yarn.lock
+
+# gatsby files
+.cache/
+public
+src/gatsby-types.d.ts
+
+# Yarn
+.pnp/
+.pnp.*
+.yarn/*
