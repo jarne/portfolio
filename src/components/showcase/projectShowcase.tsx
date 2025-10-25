@@ -123,7 +123,7 @@ const ProjectShowcase = () => {
                     {node.languages.map(language => (
                         <span
                             key={language}
-                            className="badge text-bg-language me-1"
+                            className="badge text-bg-language me-1 mb-1"
                         >
                             {language}
                         </span>
@@ -131,13 +131,13 @@ const ProjectShowcase = () => {
                     {node.frameworks.map(framework => (
                         <span
                             key={framework}
-                            className="badge text-bg-framework me-1"
+                            className="badge text-bg-framework me-1 mb-1"
                         >
                             {framework}
                         </span>
                     ))}
                     {node.tools.map(tool => (
-                        <span key={tool} className="badge text-bg-tool me-1">
+                        <span key={tool} className="badge text-bg-tool me-1 mb-1">
                             {tool}
                         </span>
                     ))}
