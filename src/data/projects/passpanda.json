@@ -1,6 +1,6 @@
 {
     "name": "PassPanda",
-    "slogan": "Instantly create robust passwords and passphrases on the web",
+    "slogan": "Password and Passphrase generator on the web",
     "description": "PassPanda is a user-friendly static web application designed to facilitate the generation of secure passwords and Diceware passphrases.",
     "license": "MIT",
     "screenshot": "passpanda-screenshot",
@@ -12,8 +12,20 @@
     },
     "features": [
         {
-            "title": "abc",
-            "description": "Servus"
+            "title": "Memorable Password Generation",
+            "description": "PassPanda can generate common passwords with customizable parameters such as length and inclusion of letters, numbers, and special characters. Users can also choose to generate easily memorable passwords using the omgopass library."
+        },
+        {
+            "title": "Diceware Passphrases",
+            "description": "Diceware passphrases can be generated thanks to a browser-native implementation of the Diceware algorithm, creating strong yet memorable passwords based on the EFF word list."
+        },
+        {
+            "title": "Implementation of Passwort Generation",
+            "description": "Both the standard and Diceware password generation are implemented in JavaScript and run locally in the browser, using the browser's secure crypto.getRandomValues API."
+        },
+        {
+            "title": "User Experience",
+            "description": "PassPanda provides handy features to improve the user experience, such as buttons for copying the password to the clipboard, generating a new one, and a system-native dark mode. It can also be installed locally as a Progressive Web App (PWA)."
         }
     ]
 }
