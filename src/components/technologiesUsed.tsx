@@ -74,7 +74,7 @@ const TechnologiesUsed = () => {
                 {languages.map(language => (
                     <span
                         key={language.name}
-                        className="badge text-bg-language me-1"
+                        className="badge text-bg-language me-1 mb-1"
                     >
                         {language.name}
                     </span>
@@ -82,13 +82,16 @@ const TechnologiesUsed = () => {
                 {frameworks.map(framework => (
                     <span
                         key={framework.name}
-                        className="badge text-bg-framework me-1"
+                        className="badge text-bg-framework me-1 mb-1"
                     >
                         {framework.name}
                     </span>
                 ))}
                 {tools.map(tool => (
-                    <span key={tool.name} className="badge text-bg-tool me-1">
+                    <span
+                        key={tool.name}
+                        className="badge text-bg-tool me-1 mb-1"
+                    >
                         {tool.name}
                     </span>
                 ))}
