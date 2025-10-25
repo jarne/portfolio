@@ -6,7 +6,11 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, type IGatsbyImageData } from "gatsby-plugin-image"
 
-import { projectTitle } from "./projectShowcase.module.css"
+import {
+    projectTitle,
+    technologyBadgesLine,
+    featureHeading,
+} from "./projectShowcase.module.css"
 
 type Project = {
     name: string
@@ -115,7 +119,7 @@ const ProjectShowcase = () => {
                         {node.slogan}
                     </h2>
                 </a>
-                <p>
+                <p className={technologyBadgesLine}>
                     {node.languages.map(language => (
                         <span
                             key={language}
@@ -142,7 +146,7 @@ const ProjectShowcase = () => {
                 <div className="row">
                     {node.features.map((feature, featIndex) => (
                         <div key={featIndex} className="col-6 col-md-3">
-                            <h5>{feature.title}</h5>
+                            <h5 className={featureHeading}>{feature.title}</h5>
                             <p>{feature.description}</p>
                         </div>
                     ))}

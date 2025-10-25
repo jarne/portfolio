@@ -1,3 +1,14 @@
 .project-title {
-    font-family: "Titan One", system-ui;
+    font-family: "TASA Orbiter Variable", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.feature-heading {
+    font-family: "TASA Orbiter Variable", sans-serif;
+    font-weight: 700;
+}
+
+.technology-badges-line {
+    font-size: 1.25rem;
 }

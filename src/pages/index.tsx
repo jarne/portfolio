@@ -10,7 +10,7 @@ import ProjectShowcase from "../components/showcase/projectShowcase"
 import { showcaseContainer } from "./index.module.css"
 
 import "../utils/bootstrapImport.scss"
-import "@fontsource/titan-one"
+import "@fontsource-variable/tasa-orbiter"
 
 const IndexPage: React.FC<PageProps> = () => {
     return (

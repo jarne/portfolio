@@ -1522,10 +1522,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/titan-one@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/titan-one@npm:5.2.8"
-  checksum: 10c0/0cdb1150db9637b1f381c0d4fa05eda8f73425299b2cfd26f46fe879e529f38fc9db3ad711bb7e59872496733a0b343234373dd60ba03f7eeb3c020526d6deca
+"@fontsource-variable/tasa-orbiter@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "@fontsource-variable/tasa-orbiter@npm:5.2.2"
+  checksum: 10c0/93b6e4010cae7de73dc502b1b7a403f6e7e36d82f0af04636d866e9c79216dca60a9a4222655e1d6c589da0d5b3db1d6c4f924303dd921a88051c4db9164f7dd
   languageName: node
   linkType: hard
 
@@ -10765,7 +10765,7 @@ __metadata:
   resolution: "portfolio@workspace:."
   dependencies:
     "@babel/core": "npm:^7.28.5"
-    "@fontsource/titan-one": "npm:^5.2.8"
+    "@fontsource-variable/tasa-orbiter": "npm:^5.2.2"
     "@types/babel__core": "npm:^7"
     "@types/bootstrap": "npm:^5"
     "@types/node": "npm:^20.11.19"
