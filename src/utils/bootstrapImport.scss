@@ -17,4 +17,6 @@ $theme-colors: (
 $badge-padding-y: 0.5em;
 $badge-padding-x: 0.8em;
 
+$color-mode-type: media-query;
+
 @import "bootstrap/scss/bootstrap";
