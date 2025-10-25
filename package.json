@@ -28,7 +28,7 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "typecheck": "tsc --noEmit",
-        "format": "prettier --write \"**/*.{ts,tsx,css,json,yml,md}\""
+        "format": "prettier --write \"**/*.{ts,tsx,css,scss,json,yml,md}\""
     },
     "dependencies": {
         "@babel/core": "^7.28.5",

@@ -4,6 +4,8 @@ import type { HeadFC, PageProps } from "gatsby"
 
 import ProfilePicture from "../components/profilePicture"
 
+import "../utils/bootstrapImport.scss"
+
 type Project = {
     name: string
     description: string
