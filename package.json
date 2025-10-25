@@ -31,11 +31,22 @@
         "format": "prettier --write \"**/*.{ts,tsx,css,json,yml,md}\""
     },
     "dependencies": {
+        "@babel/core": "^7.28.5",
+        "bootstrap": "^5.3.8",
         "gatsby": "^5.14.6",
+        "gatsby-plugin-image": "^3.15.0",
+        "gatsby-plugin-sass": "^6.15.0",
+        "gatsby-plugin-sharp": "^5.15.0",
+        "gatsby-source-filesystem": "^5.15.0",
+        "gatsby-transformer-json": "^5.15.0",
+        "gatsby-transformer-sharp": "^5.15.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "sass": "^1.93.2"
     },
     "devDependencies": {
+        "@types/babel__core": "^7",
+        "@types/bootstrap": "^5",
         "@types/node": "^20.11.19",
         "@types/react": "^18.2.55",
         "@types/react-dom": "^18.2.19",
