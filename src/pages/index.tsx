@@ -2,6 +2,8 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import type { HeadFC, PageProps } from "gatsby"
 
+import ProfilePicture from "../components/profilePicture"
+
 type Project = {
     name: string
     description: string
@@ -32,6 +34,7 @@ const IndexPage: React.FC<PageProps> = () => {
     return (
         <main>
             <h1>Test 123</h1>
+            <ProfilePicture />
             <ul>
                 {data.allProjectsJson.edges.map(
                     ({ node }: ProjectsEdge, index: number) => (
