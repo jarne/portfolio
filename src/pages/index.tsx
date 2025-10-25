@@ -27,30 +27,27 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="container">
                 <main>
                     <ProfileHeader />
+                    <section>
+                        <h2 className={`${sectionHeading} my-3`}>
+                            Technologies
+                        </h2>
+                        <TechnologiesUsed />
+                    </section>
+                    <h2 className={`${sectionHeading} my-3`}>
+                        Featured Projects
+                    </h2>
+                    <p>
+                        Here are some of my favourite projects I've worked on:
+                    </p>
                     <div className="d-flex justify-content-center mt-1">
                         <div className={showcaseContainer}>
-                            <section>
-                                <h2 className={`${sectionHeading} my-3`}>
-                                    Technologies
-                                </h2>
-                                <TechnologiesUsed />
-                            </section>
-                            <h2 className={`${sectionHeading} my-3`}>
-                                Featured Projects
-                            </h2>
-                            <p>
-                                Here are some of my favourite projects I've
-                                worked on:
-                            </p>
                             <ProjectShowcase />
-                            <section>
-                                <h2 className={`${sectionHeading} my-3`}>
-                                    Let's talk
-                                </h2>
-                                <ContactMe />
-                            </section>
                         </div>
                     </div>
+                    <section>
+                        <h2 className={`${sectionHeading} my-3`}>Let's talk</h2>
+                        <ContactMe />
+                    </section>
                 </main>
                 <Footer />
             </div>
