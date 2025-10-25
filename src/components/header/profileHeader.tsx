@@ -6,13 +6,18 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faLocationPin } from "@fortawesome/free-solid-svg-icons"
+import usePrefersColorScheme from "use-prefers-color-scheme"
 
 import ProfilePicture from "./profilePicture"
 import { nameHeading, githubLogo } from "./profileHeader.module.css"
 
 import githubSvg from "../../images/logos/github.svg"
+import githubLightSvg from "../../images/logos/github-light.svg"
 
 const ProfileHeader = () => {
+    const prefersColorScheme = usePrefersColorScheme()
+    const isDarkMode = prefersColorScheme === "dark"
+
     const data = useStaticQuery(graphql`
         query ProfileMetaQuery {
             site {
@@ -59,7 +64,7 @@ const ProfileHeader = () => {
                             rel="noopener noreferrer"
                         >
                             <img
-                                src={githubSvg}
+                                src={isDarkMode ? githubLightSvg : githubSvg}
                                 className={githubLogo}
                                 alt="GitHub profile"
                             />

@@ -10822,6 +10822,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     sass: "npm:^1.93.2"
     typescript: "npm:^5.3.3"
+    use-prefers-color-scheme: "npm:^1.1.3"
   languageName: unknown
   linkType: soft
 
@@ -13772,6 +13773,15 @@ __metadata:
     file-loader:
       optional: true
   checksum: 10c0/71b6300e02ce26c70625eae1a2297c0737635038c62691bb3007ac33e85c0130efc74bfb444baf5c6b3bad5953491159d31d66498967d1417865d0c7e7cd1a64
+  languageName: node
+  linkType: hard
+
+"use-prefers-color-scheme@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "use-prefers-color-scheme@npm:1.1.3"
+  peerDependencies:
+    react: ">= 16.8.0"
+  checksum: 10c0/d96a24c1bfb935e7c928384d4af7fd3a564bdfa24dfe21f3615b2d4cf386733e04425d4fd67be760b6bc0aa5714241138cb0e8bb0a5fd6f906247dfcce65dcfd
   languageName: node
   linkType: hard
 
