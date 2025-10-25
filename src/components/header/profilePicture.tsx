@@ -12,7 +12,7 @@ const ProfilePicture = () => {
             file(name: { eq: "profile-pic" }) {
                 childImageSharp {
                     gatsbyImageData(
-                        width: 128
+                        width: 192
                         placeholder: BLURRED
                         formats: [AUTO, WEBP]
                     )

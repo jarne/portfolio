@@ -6,7 +6,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import type { HeadFC, PageProps } from "gatsby"
 
-import ProfilePicture from "../components/profilePicture"
+import ProfileHeader from "../components/header/profileHeader"
 
 import "../utils/bootstrapImport.scss"
 
@@ -38,9 +38,8 @@ const IndexPage: React.FC<PageProps> = () => {
     `)
 
     return (
-        <main>
-            <h1>Test 123</h1>
-            <ProfilePicture />
+        <main className="container">
+            <ProfileHeader />
             <ul>
                 {data.allProjectsJson.edges.map(
                     ({ node }: ProjectsEdge, index: number) => (
