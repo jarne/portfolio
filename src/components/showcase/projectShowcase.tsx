@@ -115,9 +115,9 @@ const ProjectShowcase = () => {
                     rel="noopener noreferrer"
                 >
                     {renderProjectScreenshot(node.screenshot)}
-                    <h2 className={`${projectTitle} mt-2 mb-2`}>
+                    <h3 className={`${projectTitle} mt-2 mb-2`}>
                         {node.slogan}
-                    </h2>
+                    </h3>
                 </a>
                 <p className={technologyBadgesLine}>
                     {node.languages.map(language => (
