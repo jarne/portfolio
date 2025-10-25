@@ -1,0 +1,31 @@
+{
+    "name": "Commandoak",
+    "slogan": "One-Click-Commands Menu Bar App",
+    "description": "Introducing Commandoak, your macOS app for streamlined command execution! Define your commands with emojis and names, then effortlessly execute them in a new, interactive default Terminal window right from the menu bar.",
+    "license": "MIT",
+    "screenshot": "commandoak-screenshot",
+    "languages": ["Swift"],
+    "frameworks": ["SwiftUI", "SwiftData"],
+    "tools": ["GitHub Actions"],
+    "urls": {
+        "source": "https://github.com/jarne/commandoak"
+    },
+    "features": [
+        {
+            "title": "Command Shortcuts",
+            "description": "Define terminal commands with names and emojis, and execute them with a single click from the menu bar or using keyboard shortcuts. Commands open in a new, interactive Terminal window."
+        },
+        {
+            "title": "Modern Frameworks",
+            "description": "Built in Swift with modern frameworks like SwiftUI and SwiftData, ensuring a responsive and efficient user experience."
+        },
+        {
+            "title": "Auto-start on Login",
+            "description": "Commandoak can be configured to start automatically when you log in to your Mac by registering a helper application."
+        },
+        {
+            "title": "CI/CD",
+            "description": "The application is automatically built using Xcode on GitHub Actions. The workflow creates a new release for each version after a successful build. Application code is linted using SwiftLint in a CI pipeline."
+        }
+    ]
+}

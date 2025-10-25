@@ -1,0 +1,31 @@
+{
+    "name": "PMMP Plugins",
+    "slogan": "Game-Logic Plugins for Minecraft Servers",
+    "description": "A collection of open-source plugins developed to enhance Minecraft: Bedrock Edition server functionality, offering features such as world logic management systems, voxel world landscape generators, minigames, chat filter, and other tools. These plugins are built for PocketMine-MP, a popular server software, and written in PHP.",
+    "license": "MIT",
+    "screenshot": "pmmp-plugins-screenshot",
+    "languages": ["PHP"],
+    "frameworks": ["PocketMine-MP"],
+    "tools": ["MySQL", "PHPStan", "CircleCI"],
+    "urls": {
+        "source": "https://github.com/orgs/survanetwork/repositories?q=topic%3Apocketmine-mp"
+    },
+    "features": [
+        {
+            "title": "Game World Management",
+            "description": "Provides administrative features to manage in-game worlds by creating/deleting, loading/unloading, and changing server worlds. The majory of the game aspects (such as movements, player damages, commands, etc.) can be controlled in deep-level detail by the plugin with custom logic to allow, deny, or base the decision on an allow or block list."
+        },
+        {
+            "title": "Voxel Landscape Generation",
+            "description": "Implementation of custom voxel-based world generators that create unique landscapes based on random Simplex noice and extend the game in new ways. Generators also populate game worlds by randomly generating structures such as trees, hills, and islands."
+        },
+        {
+            "title": "In-Game Logic",
+            "description": "The creation of in-game logic such as minigames is a challenging task. These plugins provide a solid foundation for building minigames by handling player states, game phases, scoring systems, and other essential components. Other components handle world interactions or chat filtering to ensure a safe gameplay."
+        },
+        {
+            "title": "Community Engagement",
+            "description": "Online multiplayer games bring players together, and these open source plugins repositories usually show a much higher contribution by game server operators and players regarding issues, feature requests, and code contributions."
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Toohga",
+    "slogan": "Private Fast URL Shortener",
+    "description": "Toohga is your smart private URL shortener with very short URL's. It uses a custom algorithm to generate short codes that stay as short as possible, using combinations of numbers and letters.",
+    "license": "MIT",
+    "screenshot": "toohga-screenshot",
+    "languages": ["PHP", "JavaScript"],
+    "frameworks": ["Slim", "Vue.js", "PHPUnit"],
+    "tools": ["MySQL", "Docker", "CircleCI"],
+    "urls": {
+        "source": "https://github.com/jarne/Toohga"
+    },
+    "features": [
+        {
+            "title": "URLs even shorter",
+            "description": "While public URL shorteners generate URLs that are still not very short, Toohga uses a custom algorithm to generate the shortest possible URLs by combining numbers and letters."
+        },
+        {
+            "title": "Private URL Shortening",
+            "description": "The URL shortener is designed to be self-hosted and private, ensuring URLs do not get longer as with widely used public services. It also provides user management to authenticate users, while keeping it to a very usable minimum using a 4-6 digit PIN code."
+        },
+        {
+            "title": "Admin Interface",
+            "description": "An admin interface, created with Vue.js, allows instance admins to manage users and created short URLs easily."
+        },
+        {
+            "title": "Deployment & CI/CD",
+            "description": "The application is distributed as a docker container. All back-end services are unit tested using a CI workflow, and an automated CD pipeline builds a Docker image once a new version is published."
+        }
+    ]
+}
