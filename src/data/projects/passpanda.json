@@ -2,6 +2,7 @@
     "name": "PassPanda",
     "description": "Instantly create robust passwords and passphrases on the web",
     "license": "MIT",
+    "screenshot": "passpanda-screenshot",
     "languages": ["JavaScript"],
     "frameworks": ["React"],
     "tools": ["Vite", "GitHub Actions", "AWS S3", "AWS CloudFront"],

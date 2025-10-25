@@ -2,6 +2,7 @@
     "name": "Colly",
     "description": "Open Source Web-based Website URL Collection app",
     "license": "MIT",
+    "screenshot": "colly-screenshot",
     "languages": ["JavaScript"],
     "frameworks": ["Express", "React", "Mocha"],
     "tools": ["MongoDB", "MinIO", "Docker", "CircleCI"],
