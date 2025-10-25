@@ -3,10 +3,11 @@ import type { GatsbyConfig } from "gatsby"
 const config: GatsbyConfig = {
     siteMetadata: {
         title: "Dev Portfolio",
-        description: "Development portfolio showcasing my projects and skills.",
-        siteUrl: "https://www.yourdomain.tld",
+        description:
+            "Development portfolio showcasing my projects and most-used frameworks and technologies.",
+        siteUrl: "https://portfolio.jarne.rocks",
         name: "Jarne",
-        bio: "👨‍💻 JavaScript PHP Swift | 🧱 React Next.js Gatsby Docker | 📚 Business Informatics student",
+        bio: "Welcome! I'm a developer who enjoys diving into a wide range of challenges. This portfolio highlights my work building web and mobile apps, along with some fun games, powered by core technologies like JavaScript, Swift, React, CI/CD pipelines, and Docker. I'm also passionate about open-source collaboration in a team setting and frequently work on DevOps tooling.",
         location: "Germany",
         email: "dev@jarne.rocks",
         githubProfileUrl: "https://github.com/jarne",

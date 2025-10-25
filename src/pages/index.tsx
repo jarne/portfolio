@@ -52,8 +52,14 @@ export const Head: HeadFC = () => {
     `)
 
     return (
-        <title>
-            {data.site.siteMetadata.title} by {data.site.siteMetadata.name}
-        </title>
+        <>
+            <title>
+                {data.site.siteMetadata.title} by {data.site.siteMetadata.name}
+            </title>
+            <meta
+                name="description"
+                content={data.site.siteMetadata.description}
+            />
+        </>
     )
 }

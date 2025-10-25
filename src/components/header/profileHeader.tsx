@@ -35,7 +35,7 @@ const ProfileHeader = () => {
 
     return (
         <div className="row mt-3">
-            <div className="col-12 col-md-4 text-center">
+            <div className="col-12 col-md-4 d-flex justify-content-center align-items-center">
                 <ProfilePicture />
             </div>
             <div className="col-12 col-md-8 d-flex align-items-center">
@@ -49,7 +49,7 @@ const ProfileHeader = () => {
                         <FontAwesomeIcon icon={faLocationPin} /> Based in{" "}
                         {data.site.siteMetadata.location}{" "}
                         <span className="mx-1">·</span>{" "}
-                        <FontAwesomeIcon icon={faEnvelope} /> Mail:{" "}
+                        <FontAwesomeIcon icon={faEnvelope} /> Contact me:{" "}
                         <a href={`mailto:${data.site.siteMetadata.email}`}>
                             {data.site.siteMetadata.email}
                         </a>
