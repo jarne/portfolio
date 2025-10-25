@@ -8,24 +8,31 @@ import type { HeadFC, PageProps } from "gatsby"
 
 import ProfileHeader from "../components/header/profileHeader"
 import ProjectShowcase from "../components/showcase/projectShowcase"
-import { showcaseContainer, projectsHeading } from "./index.module.css"
+import {
+    headStripe,
+    showcaseContainer,
+    projectsHeading,
+} from "./index.module.css"
 
 import "../utils/bootstrapImport.scss"
 import "@fontsource-variable/tasa-orbiter"
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
-        <main className="container">
-            <ProfileHeader />
-            <div className="d-flex justify-content-center mt-1">
-                <div className={showcaseContainer}>
-                    <h2 className={`${projectsHeading} my-3`}>
-                        Featured Projects
-                    </h2>
-                    <ProjectShowcase />
+        <>
+            <div className={`${headStripe} bg-primary`}></div>
+            <main className="container">
+                <ProfileHeader />
+                <div className="d-flex justify-content-center mt-1">
+                    <div className={showcaseContainer}>
+                        <h2 className={`${projectsHeading} my-3`}>
+                            Featured Projects
+                        </h2>
+                        <ProjectShowcase />
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </>
     )
 }
 

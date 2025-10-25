@@ -3,8 +3,8 @@
  */
 
 $primary: #5935e0;
-$language: #92335f;
-$framework: #ef9061;
+$language: #d01b70;
+$framework: #ff9549;
 $tool: #f4f4f4;
 
 $theme-colors: (
@@ -13,5 +13,8 @@ $theme-colors: (
     "framework": $framework,
     "tool": $tool,
 );
+
+$badge-padding-y: 0.5em;
+$badge-padding-x: 0.8em;
 
 @import "bootstrap/scss/bootstrap";
