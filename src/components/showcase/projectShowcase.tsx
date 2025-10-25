@@ -95,6 +95,29 @@ const ProjectShowcase = () => {
             <section key={index}>
                 {renderProjectScreenshot(node.screenshot)}
                 <h2>{node.name}</h2>
+                <p>
+                    {node.languages.map(language => (
+                        <span
+                            key={language}
+                            className="badge text-bg-language me-1"
+                        >
+                            {language}
+                        </span>
+                    ))}
+                    {node.frameworks.map(framework => (
+                        <span
+                            key={framework}
+                            className="badge text-bg-framework me-1"
+                        >
+                            {framework}
+                        </span>
+                    ))}
+                    {node.tools.map(tool => (
+                        <span key={tool} className="badge text-bg-tool me-1">
+                            {tool}
+                        </span>
+                    ))}
+                </p>
                 <p>{node.description}</p>
             </section>
         ),

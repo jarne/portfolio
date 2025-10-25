@@ -3,5 +3,15 @@
  */
 
 $primary: #5935e0;
+$language: #92335f;
+$framework: #ef9061;
+$tool: #f4f4f4;
+
+$theme-colors: (
+    "primary": $primary,
+    "language": $language,
+    "framework": $framework,
+    "tool": $tool,
+);
 
 @import "bootstrap/scss/bootstrap";
