@@ -1,0 +1,11 @@
+{
+    "name": "Colly",
+    "description": "Open Source Web-based Website URL Collection app",
+    "license": "MIT",
+    "languages": ["JavaScript"],
+    "frameworks": ["Express", "React", "Mocha"],
+    "tools": ["MongoDB", "MinIO", "Docker", "CircleCI"],
+    "urls": {
+        "source": "https://github.com/jarne/colly"
+    }
+}

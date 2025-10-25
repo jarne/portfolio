@@ -1,0 +1,11 @@
+{
+    "name": "PassPanda",
+    "description": "Instantly create robust passwords and passphrases on the web",
+    "license": "MIT",
+    "languages": ["JavaScript"],
+    "frameworks": ["React"],
+    "tools": ["Vite", "GitHub Actions", "AWS S3", "AWS CloudFront"],
+    "urls": {
+        "source": "https://github.com/jarne/passpanda"
+    }
+}
