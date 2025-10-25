@@ -3,6 +3,7 @@
  */
 
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import type { HeadFC, PageProps } from "gatsby"
 
 import ProfileHeader from "../components/header/profileHeader"
@@ -27,4 +28,22 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => {
+    const data = useStaticQuery(graphql`
+        query PageMetaQuery {
+            site {
+                siteMetadata {
+                    title
+                    name
+                    description
+                }
+            }
+        }
+    `)
+
+    return (
+        <title>
+            {data.site.siteMetadata.title} by {data.site.siteMetadata.name}
+        </title>
+    )
+}

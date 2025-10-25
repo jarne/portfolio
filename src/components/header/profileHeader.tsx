@@ -4,6 +4,8 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faLocationPin } from "@fortawesome/free-solid-svg-icons"
 
 import ProfilePicture from "./profilePicture"
 import { nameHeading, githubLogo } from "./profileHeader.module.css"
@@ -15,6 +17,7 @@ const ProfileHeader = () => {
         query ProfileMetaQuery {
             site {
                 siteMetadata {
+                    title
                     name
                     bio
                     location
@@ -33,19 +36,23 @@ const ProfileHeader = () => {
             <div className="col-12 col-md-8 d-flex align-items-center">
                 <div>
                     <h1 className={nameHeading}>
-                        {data.site.siteMetadata.name}
+                        {data.site.siteMetadata.name}:{" "}
+                        {data.site.siteMetadata.title}
                     </h1>
                     <p className="mb-2">{data.site.siteMetadata.bio}</p>
                     <p className="mb-2">
-                        <span role="img" aria-label="">
-                            📍
-                        </span>{" "}
-                        {data.site.siteMetadata.location} | Mail:{" "}
+                        <FontAwesomeIcon icon={faLocationPin} /> Based in{" "}
+                        {data.site.siteMetadata.location}{" "}
+                        <span className="mx-1">·</span>{" "}
+                        <FontAwesomeIcon icon={faEnvelope} /> Mail:{" "}
                         <a href={`mailto:${data.site.siteMetadata.email}`}>
                             {data.site.siteMetadata.email}
                         </a>
                     </p>
-                    <div>
+                    <div className="d-flex align-items-center">
+                        <span className="me-2">
+                            <b>Links:</b>
+                        </span>
                         <a
                             href={data.site.siteMetadata.githubProfileUrl}
                             target="_blank"
