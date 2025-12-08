@@ -14,17 +14,13 @@ import Footer from "../components/footer"
 
 import "../utils/bootstrapImport.scss"
 import "@fontsource-variable/tasa-orbiter"
-import {
-    headStripe,
-    showcaseContainer,
-    sectionHeading,
-} from "./index.module.css"
+import { headStripe, mainContainer, sectionHeading } from "./index.module.css"
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
             <div className={`${headStripe} bg-primary`}></div>
-            <div className="container">
+            <div className={`container ${mainContainer}`}>
                 <main>
                     <ProfileHeader />
                     <section>
@@ -40,7 +36,7 @@ const IndexPage: React.FC<PageProps> = () => {
                         Here are some of my favourite projects I've worked on:
                     </p>
                     <div className="d-flex justify-content-center mt-1">
-                        <div className={showcaseContainer}>
+                        <div>
                             <ProjectShowcase />
                         </div>
                     </div>
