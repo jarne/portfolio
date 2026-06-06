@@ -58,6 +58,36 @@
         "prettier": "^3.6.2",
         "typescript": "^6.0.0"
     },
+    "dependenciesMeta": {
+        "@parcel/watcher": {
+            "built": true
+        },
+        "core-js": {
+            "built": true
+        },
+        "core-js-pure": {
+            "built": true
+        },
+        "es5-ext": {
+            "built": true
+        },
+        "gatsby": {
+            "built": true,
+            "unplugged": true
+        },
+        "gatsby-cli": {
+            "built": true
+        },
+        "lmdb": {
+            "built": true
+        },
+        "msgpackr-extract": {
+            "built": true
+        },
+        "sharp": {
+            "built": true
+        }
+    },
     "private": true,
     "packageManager": "yarn@4.16.0"
 }

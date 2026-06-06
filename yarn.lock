@@ -11020,6 +11020,26 @@ __metadata:
     sass: "npm:^1.93.2"
     typescript: "npm:^6.0.0"
     use-prefers-color-scheme: "npm:^1.1.3"
+  dependenciesMeta:
+    "@parcel/watcher":
+      built: true
+    core-js:
+      built: true
+    core-js-pure:
+      built: true
+    es5-ext:
+      built: true
+    gatsby:
+      built: true
+      unplugged: true
+    gatsby-cli:
+      built: true
+    lmdb:
+      built: true
+    msgpackr-extract:
+      built: true
+    sharp:
+      built: true
   languageName: unknown
   linkType: soft
 
