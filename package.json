@@ -31,7 +31,7 @@
         "format": "prettier --write \"**/*.{ts,tsx,css,scss,json,yml,md}\""
     },
     "dependencies": {
-        "@babel/core": "^7.28.5",
+        "@babel/core": "^8.0.0",
         "@fontsource-variable/tasa-orbiter": "^5.2.2",
         "@fortawesome/fontawesome-svg-core": "^7.1.0",
         "@fortawesome/free-solid-svg-icons": "^7.1.0",
